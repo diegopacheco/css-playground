@@ -1,0 +1,37 @@
+<script type="text/javascript">
+  function save() {
+  var fname = document.getElementById('fname').value;
+  var lname = document.getElementById('lname').value;
+  var country = document.getElementById('country').value;
+  var data = {
+    firstName: fname,
+    lastName: lname,
+    country: country
+  };
+  console.log(data);
+  alert(data.firstName + ' ' + data.lastName + ' ' + data.country);
+}
+</script>
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+  <h3>Using CSS to style an HTML Form</h3>
+  <div>
+    <form onsubmit="save(); return false;">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+      <label for="country">Country</label>
+      <select id="country" name="country" required>
+        <option value="">Select a country</option>
+        <option value="brazil">Brazil</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
