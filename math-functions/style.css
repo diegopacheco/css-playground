@@ -1,0 +1,7 @@
+#div1 {
+  background-color: yellow;
+  height: max(100px, 10px);
+  width: min(50%, 300px);
+  border-style: groove;
+  border-width: calc(2px + 1vmin);
+}
