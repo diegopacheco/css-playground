@@ -1,0 +1,22 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: lightsalmon;
+}
+
+div:hover {
+  width: 100px;
+  height: 100px;
+  background-color: lightsalmon;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: orange;}
+  100% {background-color: goldenrod;}
+}
+
