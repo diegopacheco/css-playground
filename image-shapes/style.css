@@ -1,0 +1,11 @@
+#img1 {
+  clip-path: circle(50%);
+}
+
+#img2 {
+  clip-path: circle(40%);
+}
+
+#img3 {
+  clip-path: circle(60%);
+}
